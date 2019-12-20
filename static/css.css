@@ -1,0 +1,369 @@
+* {
+  margin: 0px;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+}
+
+/*
+Navbar
+*/
+
+header {
+  background-color: #04EAB3;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  padding: 10px;
+}
+
+.logo {
+  flex-basis: 1;
+  display: flex;
+  align-items: center;
+}
+
+#smallSelaamoLogo {
+  height: 32px;
+}
+
+nav ul {
+  background-color: #04eab3;
+  display: flex;
+  list-style-type: none;
+  justify-content: center;
+  margin: 0;
+  padding: 0;
+}
+
+nav ul a {
+  display: block;
+  padding: 0.3rem 0.5rem;
+  color: #fff;
+  text-decoration: none;
+  font-family: Assistant;
+}
+
+nav ul a:hover {
+  background-color: #01BF91;
+}
+
+
+/*
+Photo section
+*/
+
+.photo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  flex-direction: column;
+  background-image: url("/static/images/bigPhoto.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+  height: 500px;
+  padding: 20px;
+  font-family: Assistant;
+}
+
+.button {
+  background-color: #436385;
+  border: none;
+  color: white;
+  padding: 10px 30px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 14px;
+  border-radius: 8px;
+}
+
+.email {
+  background-color: #F6F6F6;
+  border-radius: 8px;
+  padding: 10px 30px;
+  width: 300px;
+  text-align: center;
+  border: none;
+  font-family: Assistant;
+}
+
+.button:hover {
+  background-color: #3a5674;
+}
+
+.button:disabled {
+  background-color: #a1a1a1;
+}
+
+.button.success {
+  background-color: #04EAB3;
+}
+
+.button.fail {
+  background-color: #e27680;
+}
+
+.form {
+  margin-top: 2rem;
+}
+
+.download-links {
+  margin-top: 3rem;
+}
+
+.download-links ul {
+  display: flex;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+.download-links img {
+  max-width: 200px;
+}
+
+.download-links li {
+  margin: 0 1rem;
+}
+
+.download-links .app-store img {
+  max-width: 180px;
+}
+
+.photo h1 {
+  font-size: 60px;
+  color: #444444;
+}
+
+h1 {
+  font-family: Rubik;
+  font-weight: 500;
+  font-size: 34px;
+  color: #444444;
+}
+
+.what {
+  font-family: Assistant;
+  color: #444444;
+  padding: 60px;
+  text-align: center;
+  background-color: #ffffff;
+}
+
+.how {
+  font-family: Assistant;
+  color: #444444;
+  padding: 60px;
+  text-align: center;
+  background-color: #f6f6f6;
+}
+
+.videos {
+  background-color: #fff;
+}
+
+.videos h2,
+.faq h2 {
+  margin: 2rem 0 1rem;
+}
+
+.videos h3,
+.faq h3 {
+  margin: 1rem 0 0.5rem;
+}
+
+.faq .inner {
+  margin: 0 auto;
+  max-width: 700px;
+}
+
+.videos iframe {
+  width: 560px;
+  height: 315px;
+}
+
+.how > h1 {
+  margin-bottom: 1.5rem;
+}
+
+.how-container {
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.grid-container-2 {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+}
+
+.how-item {
+  display: flex;
+  margin-left: 60px;
+  margin-right: 60px;
+  border: 1px black;
+}
+
+.how-item > div {
+  padding-left: 30px;
+  align-self: center;
+}
+
+.who {
+  font-family: Assistant;
+  color: #444444;
+  padding: 60px;
+  text-align: center;
+  background-color: #ffffff;
+}
+
+.contact {
+  font-family: Assistant;
+  color: #444444;
+  padding: 60px;
+  text-align: center;
+  background-color: #f5f74f;
+}
+
+.contact a {
+  text-decoration: none;
+  color: #04EAB3;
+}
+
+.contact a:hover {
+  text-decoration: none;
+  background-color: #04EAB3;
+  color: #ffffff;
+}
+
+footer {
+  align-items: center;
+  font-family: Assistant;
+  color: #ffffff;
+  padding: 60px;
+  text-align: center;
+  background-color: #444444;
+}
+
+footer a {
+  color: #ffffff;
+}
+
+.number {
+  font-size: 140px;
+  color: #436385;
+  font-family: Rubik;
+  font-weight: 600;
+}
+
+.person {
+  height: 150px;
+}
+
+.terms {
+  margin: 2rem auto;
+  padding: 0 1rem;
+  max-width: 700px;
+}
+
+.terms h1 {
+  padding: 1.5rem 0 1rem;
+}
+
+.terms h2 {
+  padding: 1rem 0 0.5rem;
+}
+
+.terms p {
+  padding: 0.2rem 0;
+}
+
+@media only screen and (max-width: 1200px) {
+  .grid-container-2 {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+@media only screen and (max-width: 720px) {
+  nav ul {
+    flex-direction: column;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .photo h1 {
+    font-size: 32px;
+  }
+  .grid-container-2 {
+    grid-template-columns: 1fr;
+  }
+
+  .how {
+    padding-left: 5px;
+    padding-right: 15px;
+  }
+  .how-item {
+    margin: 0 5px;
+  }
+
+  .videos iframe {
+    width: 400px;
+    height: 225px;
+  }
+}
+
+@media only screen and (max-width: 450px) {
+  .videos iframe {
+    width: 300px;
+    height: 168px;
+  }
+}
+
+.shutdown {
+    margin: 0 auto;
+    max-width: 800px;
+}
+
+.shutdown p {
+    margin: 30px 0 0 0;
+}
+
+.header-container {
+    display: flex;
+    justify-content: space-between;
+    background-color: #2CD8AF;
+    padding: 10px 0 10px;
+}
+
+.header-image {
+    width: 40px;
+    height: 40px;
+    display: inline-block;
+    background-image: url(/static/images/icon-white-small.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    margin: 0 20px 0 20px;
+}
+
+.header-text {
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    padding-right: 50px;
+}
+
+.header-info {
+    display: inline-block;
+    font-size: 20px;
+    text-decoration: none;
+    font-weight: bold;
+    color: #fff;
+    align-self: center;
+    text-align: center;
+    margin: 10px 20px 0 5px;
+}
